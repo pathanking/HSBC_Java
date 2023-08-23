@@ -1,0 +1,22 @@
+package oop.abstraction.smartphone;
+
+public class OnePlus extends SmartPhone {
+
+	@Override
+	void makeCall() {
+		System.out.println("making a call using OnePlus");
+	}
+
+	@Override
+	void sendText() {
+		System.out.println("sending a text using OnePlus");
+	}
+
+	void browseNet() {
+
+	}
+
+	void instantMessaging() {
+
+	}
+}

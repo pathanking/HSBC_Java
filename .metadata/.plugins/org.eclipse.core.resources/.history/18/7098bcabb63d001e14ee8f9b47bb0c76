@@ -1,0 +1,19 @@
+package arrays;
+
+/**
+ * 
+ * @author razaa
+ * @apiNote array of arrays
+ */
+
+public class MultiDimArrayDemo {
+	public static void main(String[] args) {
+		int[][] arr = new int[2][2];
+
+		int[][] arr2 = { { 1, 2 }, { 2, 3 } };
+		System.out.println(arr2[0][0]); //1
+		System.out.println(arr2[0][1]); //2
+		System.out.println(arr2[1][0]); //2
+		System.out.println(arr2[1][1]); //3
+	}
+}

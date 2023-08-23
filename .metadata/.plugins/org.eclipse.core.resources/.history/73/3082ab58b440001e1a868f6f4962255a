@@ -1,0 +1,14 @@
+package oop.abstraction.smartphone;
+
+public class Vivo extends SmartPhone{
+
+	@Override
+	void makeCall() {
+		System.out.println("making a call using Vivo");
+	}
+
+	@Override
+	void sendText() {
+		System.out.println("sending a text using Vivo");
+	}
+}

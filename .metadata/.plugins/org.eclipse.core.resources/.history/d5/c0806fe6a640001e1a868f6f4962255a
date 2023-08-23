@@ -1,0 +1,13 @@
+package oop.modifiers2;
+
+import oop.modifiers.A;
+
+public class C extends A{
+	public static void main(String[] args) {
+		C aObj = new C();
+		//System.out.println("i : " + aObj.i);
+		System.out.println("j : " + aObj.j);
+		System.out.println("k : " + aObj.k);
+		//System.out.println("m : " + aObj.m);
+	}
+}

@@ -1,0 +1,33 @@
+package com.ems.dao;
+
+import java.util.ArrayList;
+
+import com.ems.business.Employee;
+
+public class DbImplementation implements EmployeeRepository {
+
+	@Override
+	public void save(String ename) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public ArrayList<Employee> show() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employee fetch(int eid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String delete(int eid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

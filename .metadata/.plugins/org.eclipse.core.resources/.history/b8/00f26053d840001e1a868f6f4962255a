@@ -1,0 +1,17 @@
+package com.ems.dao;
+
+import java.util.ArrayList;
+
+import com.ems.business.Employee;
+
+public interface EmployeeRepository {
+
+	void save(String ename);
+
+	ArrayList<Employee> show();
+
+	void fetch(int eid);
+
+	void delete(int eid);
+
+}

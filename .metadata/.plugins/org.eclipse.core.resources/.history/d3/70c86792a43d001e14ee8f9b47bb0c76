@@ -1,0 +1,22 @@
+package basics;
+
+import java.util.Scanner;
+
+public class ConditionalStatementsDemo {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Enter Your PIN");
+		int pin = scanner.nextInt();
+
+		int count = 0;
+		while (count == 3) {
+			if (pin == 1234)
+				System.out.println("Success");
+			else {
+				System.out.println("Error");
+				count++;
+			}
+		}
+	}
+}

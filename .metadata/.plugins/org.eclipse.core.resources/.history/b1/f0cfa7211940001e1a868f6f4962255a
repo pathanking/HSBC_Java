@@ -1,0 +1,11 @@
+package oop.inheritance;
+
+public class TestBooks {
+
+	public static void main(String[] args) {
+		Book book = new ScienceBook(112, "Physics", "fiction");
+		book.read();
+		System.out.println(book);
+	}
+
+}

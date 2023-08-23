@@ -1,0 +1,15 @@
+package basics;
+
+/**
+ * 
+ * @author razaa
+ * @apiNote find max of three numbers using nested if-else
+ */
+
+public class NestedIfElse {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

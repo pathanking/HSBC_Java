@@ -1,0 +1,7 @@
+package oop;
+
+public class Addition {
+	public void add(int x, int y) {
+		System.out.println("(int x, int y): " + (x + y));
+	}
+}

@@ -1,0 +1,41 @@
+package basics;
+
+import java.util.Scanner;
+
+/**
+ * 
+ * @author razaa
+ * @apiNote menu base applications switch-case is preferred
+ */
+
+public class SwitchCaseDemo {
+	public static void menu() {
+		System.out.println("[1] Addition");
+		System.out.println("[2] Subtraction");
+		System.out.println("[3] Multiplication");
+		System.out.println("[4] Division");
+		System.out.println("[5] Remainder");
+	}
+
+	public static void main(String[] args) {
+		menu();
+		System.out.println("Enter Your Choice : [1 | 2 | 3 | 4 | 5]");
+		Scanner scanner = new Scanner(System.in);
+		int choice = scanner.nextInt();
+
+		switch (choice) {
+		case 1:
+			break;
+		case 2:
+			break;
+		case 3:
+			break;
+		case 4:
+			break;
+		case 5:
+			break;
+		default:
+			System.out.println("Invalid Input");
+		}
+	}
+}

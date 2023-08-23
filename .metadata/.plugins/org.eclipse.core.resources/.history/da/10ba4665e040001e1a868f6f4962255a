@@ -1,0 +1,8 @@
+package oop;
+
+public class TestEmp {
+	public static void main(String[] args) {
+		Emp e1 = new Emp(1, "sai");
+		Emp e2 = new Emp(1, "sai");
+	}
+}

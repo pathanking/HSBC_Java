@@ -1,0 +1,25 @@
+package com.ems.dao;
+
+public class InMemoryEmployeeRepository implements EmployeeRepository {
+
+	@Override
+	public void save() {
+
+	}
+
+	@Override
+	public void show() {
+
+	}
+
+	@Override
+	public void fetch() {
+
+	}
+
+	@Override
+	public void delete() {
+
+	}
+
+}

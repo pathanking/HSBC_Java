@@ -1,0 +1,10 @@
+package oop;
+
+public class StringDemo2 {
+	public static void main(String[] args) {
+		String str = "hello";
+		System.out.println(str.toUpperCase());
+		System.out.println(str.isBlank());
+		System.out.println(str.length());
+	}
+}

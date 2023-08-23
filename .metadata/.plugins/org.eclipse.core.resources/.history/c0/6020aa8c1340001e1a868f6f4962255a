@@ -1,0 +1,37 @@
+package oop.inheritance;
+
+public class A {
+	int i;
+
+	A() {
+	}
+
+	A(int i) {
+		this.i = i;
+	}
+
+	void foo() {
+		System.out.println("foo() from A");
+	}
+}
+
+class B extends A {
+	B() {
+		super();
+	}
+
+	B(int i) {
+		super(i);
+	}
+	
+	void foo() {
+		System.out.println("foo() from B");
+	}
+}
+
+class TestInheritance{
+	public static void main(String[] args) {
+		B b = new B();
+		b.foo();
+	}
+}

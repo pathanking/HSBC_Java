@@ -1,0 +1,31 @@
+package com.ems.dao;
+
+import java.util.ArrayList;
+
+import com.ems.business.Employee;
+
+public class InMemoryEmployeeRepository implements EmployeeRepository {
+	
+	static ArrayList<Employee> employees  = new ArrayList<>();
+
+	@Override
+	public void save() {
+
+	}
+
+	@Override
+	public void show() {
+
+	}
+
+	@Override
+	public void fetch() {
+
+	}
+
+	@Override
+	public void delete() {
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package oop.statics;
+
+public class A {
+	static int count;
+	
+	static void print() {
+		System.out.println("print from A");
+	}
+	
+	public static void main(String[] args) {
+		print();
+	}
+}

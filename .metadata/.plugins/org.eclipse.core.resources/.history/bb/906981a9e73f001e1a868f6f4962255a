@@ -1,0 +1,20 @@
+package oop;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		int a = 5;
+		foo(a);
+		System.out.println("Inside main: " + a); //5
+
+	}
+
+	static void foo(int x) {
+		x = x + 2;
+		System.out.println("Inside foo: " + x); //7
+	}
+
+	static void bar(Restaurant restaurant) {
+		
+	}
+}

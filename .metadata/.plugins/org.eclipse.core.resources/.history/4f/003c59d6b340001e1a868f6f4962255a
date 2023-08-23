@@ -1,0 +1,9 @@
+package oop.abstraction.smartphone;
+
+public abstract class SmartPhone {
+	String company;
+	String model;
+	
+	abstract void makeCall();
+	abstract void sendText();
+}

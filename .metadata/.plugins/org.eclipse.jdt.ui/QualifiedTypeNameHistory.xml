@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="Student"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="oop.Product"/>
+    <fullyQualifiedTypeName name="oop.Addition"/>
+    <fullyQualifiedTypeName name="oop.Restaurant"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="oop.inheritance.Admin"/>
+    <fullyQualifiedTypeName name="oop.inheritance.User"/>
+    <fullyQualifiedTypeName name="oop.inheritance.ScienceBook"/>
+    <fullyQualifiedTypeName name="oop.inheritance.ComputerBook"/>
+    <fullyQualifiedTypeName name="oop.inheritance.C"/>
+    <fullyQualifiedTypeName name="oop.modifiers.A"/>
+    <fullyQualifiedTypeName name="oop.abstraction.smartphone.SmartPhone"/>
+    <fullyQualifiedTypeName name="oop.abstraction.smartwatch.SmartWatch"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="oop.abstraction.smartphone.OnePlus"/>
+    <fullyQualifiedTypeName name="oop.abstraction.smartphone.Vivo"/>
+    <fullyQualifiedTypeName name="oop.abstraction.smartwatch.Boult"/>
+    <fullyQualifiedTypeName name="oop.abstraction.smartwatch.Noise"/>
+    <fullyQualifiedTypeName name="oop.abstraction.contracts.FiveGEnabler"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.ems.dao.EmployeeRepository"/>
+    <fullyQualifiedTypeName name="com.ems.business.EmployeeService"/>
+    <fullyQualifiedTypeName name="com.ems.dao.InMemoryEmployeeRepository"/>
+    <fullyQualifiedTypeName name="com.ems.business.Employee"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.ems.dao.DbImplementation"/>
+    <fullyQualifiedTypeName name="oop.Emp"/>
+</qualifiedTypeNameHistroy>

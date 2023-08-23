@@ -1,0 +1,2 @@
+for (int i : ints)
+			System.out.println(i);

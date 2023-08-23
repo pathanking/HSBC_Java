@@ -1,0 +1,29 @@
+package oop.abstraction.smartphone;
+
+public class TestSmartPhones {
+	static void menu() {
+		System.out.println("1. OnePlus");
+		System.out.println("2. Vivo");
+	}
+	
+	
+	public static void main(String[] args) {
+		menu();
+		int choice = 0;
+		do {
+			switch (choice) {
+			case 1:
+				
+				break;
+
+			case 2:
+				break;
+			default:
+				System.out.println("Invalid Option! Exiting");
+				break;
+			}
+		}while(choice != 1 && choice != 2)
+		
+	}
+
+}

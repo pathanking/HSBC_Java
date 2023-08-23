@@ -1,0 +1,10 @@
+package oop;
+
+public class TestAddition {
+	public static void main(String[] args) {
+		// create an object of Addition class
+		Addition adder = new Addition();
+
+		adder.add((float)2.5, (float)7.5);
+	}
+}

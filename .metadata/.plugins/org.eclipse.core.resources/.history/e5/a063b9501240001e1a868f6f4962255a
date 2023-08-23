@@ -1,0 +1,18 @@
+package oop.inheritance;
+
+public class A {
+	int i;
+
+	A(int i) {
+		this.i = i;
+	}
+
+	void foo() {
+		System.out.println("foo() from A");
+	}
+}
+
+class B extends A{
+
+	
+}

@@ -1,0 +1,441 @@
+Softwares:
+---------------
+JDK 11/17
+Eclipse IDE
+Apache Tomcat 
+Apache Derby
+
+Java: (1995 - 2023 to be continued)
+------------------------------------
+web application
+enterprise application
+bfs application
+ensurance appliction
+healthcare application
+
+Features: 
+-------------
+Simple (No Pointers, No Multiple-Inheritance)
+Platform Independent: Write Once Run Anywhere
+	platfrom: Windows Platform, Linux Platform, MacOS Platfrom
+
+For ex:
+	whatsapp for android
+	whatsapp for iOS
+
+ITR software(Java) can run on Windows, Linux, Mac equally 
+
+OOP: Java supports Inheritance, Encapsulation, Abstraction and Polymorphism. Modularity and maintainance of application is easy
+
+SDLC: Software Development Lifecycle
+Requirement Gathering
+Requirement Analysis
+Design
+Coding
+Testing
+Deployment
+Maintenance
+	
+
+Portability: we can transport our source code to any other machine with no change
+
+Rich Set of Libraries: JDL, Date & time APIs, Java Net APIs, Guava Library, JUnit
+
+Large Community: helps to fix day to day java issues/problems
+
+Multi Threading: in-built support for multithreading
+	Project Loom: Virtual Threads
+
+package: set of related classes/interfaces
+library: 
+	guava library: contains packages related to advanced collections processing
+	junit library: contains packages related to unit testing of java code
+
+Java is an interpreted language
+
+
+JDK: Java Development Kit
+	javac compiler: compiles java sourcecode into bytecode
+	jre + jit: 
+	JRE: Java Runtime Environment
+	JIT: Just In Time Compiler			
+	javap: summary of a class/interface
+	java debugging
+	java documentation
+	etc...
+
+-> Java is a strong-typed programming language	
+	int age; //declaration
+	age = 22; //initialization
+
+	int age = 22; 
+
+
+-> Data Types:
+1. primitive data types
+	byte -128 to 127
+	short
+	int
+	long
+	float
+	double
+	char: 'a', '#'
+	boolean: true and false
+
+	boolean isEligible = false;
+	long mobile = 99887755;
+
+2. non-primitive data types
+	also called as reference data types
+		
+	Employee emp = null;
+	String str = "Hello";
+
+Here String & Employee are reference data types
+
+variables:
+-----------
+store the value during program execution
+	int amount = 3000;
+
+	instance variables(instance fields)
+	static variables(static fields)
+	local variables(defined inside a method or block)
+	parameters(defined inside method/constructor signature)
+	final variables(constants)
+
+final int age = 22;
+
+Keywords:
+------------
+predefined reserved words
+
+	"abstract"
+
+	"synchronized"
+
+	"var"
+
+-> A keyword can't be used to name a variable/method etc..
+-> A keyword should be used in its context only
+
+Operators:
+-------------
+Arithmetic Operators 	+	-	*	/	%
+Relational Operators	<	<=	>	>=	==	!=
+Logical Operators	&&		||		!
+Bitwise Operators	&	|	^	<<	>>	
+In/Decrement Opertors	++	--
+Ternary Operator	EXP ? 	STAT1	: STAT2
+
+Post-Increment: use the variable, after using the variable increment it by 1
+Pre-Increment: variable is incremented by 1 before using it
+
+Control-Flow Statements:
+----------------------------
+Looping Statements
+	for	loop
+	while	loop
+	do-while loop
+	foreach loop
+
+Conditional Statements
+	if block
+	if-else
+	nested if-else
+	switch-case
+
+Branching Statements
+	break
+	continue
+	return
+
+Arrays:
+------------
+-> set of similar type of elements
+-> size is fixed; can't be increased or decreased
+-> index always start from zero
+-> last index is size-1
+-> "length" is built-in property attached with every array
+
+
+class & object:
+------------------
+	1.procurement
+	2.sell
+	3.invoice
+	4.customer
+	5.product
+
+	prodId: 112
+	prodName: Pen
+	price: 50
+	manufacturedetails: ITC
+	ingredients: kdk
+	
+
+	prodId: 225
+	prodName: Book
+	price: 500
+	manufacturedetails: Oxford
+	ingredients: hhf
+		
+
+class Product{
+	int pId;
+	String pname;
+	double price;
+	String manufacturer;
+	
+	void displayProductDetails(){
+		System.out.println("Here are Product Details");
+		System.out.println("Product ID : "+pId);
+		System.out.println("Product Name: "+pname);
+	}
+}	
+	
+
+Encapsulation:
+-------------------
+wrapping up the data and functionalities using a single unit i.e. class
+
+-> data security
+-> controlled access
+-> A class in which all the fields are private and has respective public getter/setter methods is known as fully encapsulated class
+
+
+Comments:
+---------------
+single line comment	//
+multi line comment	/**  ...... */
+
+Method Overloading:
+---------------------
+defining multiple methods with the same name with different type/number of parameters
+
+
+Consturctor Overloading:
+-------------------------
+defining multiple constructors with different type/number of parameters
+
+Polymorphism:
+-------------------
+One thing, many forms
+
+1. static(compile time) polymorphism
+2. dynamic(run time) polymorphism
+
+Passing Primitive/Object Arguments:
+----------------------------------------
+Pass By Value:  pass primitives to method
+Pass By Reference: pass reference to method
+
+String Handling:
+-------------------
+1. String			immutable strings
+2. StringBuilder		mutable strings, not synchornized
+3. StringBuffer			mutable strings, synchronized
+
+
+Inheritance:
+-------------------
+	reusability
+
+Types of Inheritance:
+
+Single Inheritance
+Multi Level Inheritance
+Multiple Inheritance of classes not allowed
+
+this keyword:
+-----------------
+-> refers to current object
+-> distinguish b/w instance fields & parameters if their names are same
+-> used to call same class constructor
+-> used to call same class methods
+
+
+constructor:
+-----------------
+-> used to intialize the object
+-> its name is same as classaname
+-> no return type, not even void
+-> many constructors in a class called are constructor overloading
+-> zero-arg constructor has not parameters
+-> default constructor is provided by Java Compiler if developer doesn't write any
+-> sameclass constructors can be called using "this()"
+-> superclass constructor can be called using "super()"
+
+
+super keyword:
+-------------------
+-> refers to superclass object
+-> used to call superclass constructor
+-> used to refere superclass methods/fields
+
+method overriding:
+------------------------
+-> redefining superclass method into childclass is known as method overriding
+-> overriding always happens in the context of inheritance
+-> childclass override parentclass methods
+-> methodname & parameters must be the same in childclass method
+-> childclass overriding method can have higher access modifier
+-> childclass overriding method can't throw new exceptions
+
+
+Abstraction:
+----------------------
+Design simple applications by hiding the complexities and showing only required information
+
+Abstract Class: A class declared with "abstract" keyword is called abstract class
+	-> can't be instantiated
+	-> can have instance fields, constructors etc..
+	-> abstract classes serve as the parentclass in a hierarchy of classes
+	-> abstract class should be inherited by childclasses
+	-> it can have concrete methods or abstract methods
+	-> it can have zero abstract methods also
+
+Library System:
+-----------------
+Book
+Librarian
+
+Banking System:
+--------------------
+customer
+account
+cashier
+manager
+loans
+
+				final keyword
+			--------------------------------------
+	1. final with class: A final class can't be inherited
+	2. final with method: A final method can't be overridden
+	3. final with variable: A final variable can't be modified
+
+	Note: An abstract class can't be final
+
+	Single Line Comment: CTRL + /
+	Multi-Line Comment: CTRL + SHIFT + /    uNcOMMenT: CTRL + SHIFT + \
+	Format: CTRL + SHIFT + F
+
+	Modifiers:
+	1. Access Modifier: private, protected, public, package-private	
+	2. Non-Access Modifier: static, abstract, final, synchronized
+
+	checkstyle plugin
+
+
+				static keyword:
+			-----------------------------------
+
+-> used to define static fields/methods/blocks
+-> used to define static nested class
+-> static fields/methods is accessed using classname only
+-> to access static fields/methods, object is not required
+-> a static method can refer static fields/methods directly
+-> a static method can refere non-static fields/methods with an object
+-> static methods generally serve utility methods or common logic
+-> static keyword is used to define common field for all objects
+-> static keyword is used to define a constant alongwith final keyword
+
+
+	Abstract Class:
+	---------------------
+	-> hierarchy of similar classes 
+	
+	-> MyInput.java	<<abstract>>, KeyboardInput.java, FileInput.java, DbInput.java
+	-> MyOutput.java <<abstract>>
+
+	 input output of data
+
+	 com.bluedart.business
+	 com.bluedart.presentation
+	 com.bluedart.persistence	 
+		
+	interfaces:
+	----------------
+	-> implement a contract across different hierarchies of classes
+
+	Layered Architecture: n-tier architecture
+	---------------------------------------------
+
+	-> clear seperation of concerns(responsibilities)
+	-> faster development
+	-> modular
+	-> loose coupling
+	-> Testing
+	-> Maintainabiliy
+	-> Security
+	
+
+	1. Presentation Layer
+	2. Business Layer
+	3. Data Layer
+	
+	-> Employee Management System (CRUD)
+		. Layered Architecture
+		. Object Oriented Principles
+		. Exception Handling
+		. In-Memory DB (Collections)
+		. Database (MySQL)
+
+	Presentation Layer: com.ems.view
+		MainUI.java 
+
+	Business Layer: com.ems.business
+		Employee.java
+		EmployeeService.java
+
+	Data Layer: com.ems.dao
+		EmployeeRepository.java <<interface>>
+		InMemoryEmployeeRepository.java	
+
+
+
+	hashCode() & equals() method
+	------------------------------------
+	two objects can have same hashcode
+
+	-> if objects have diff hascode then they are not equal
+	-> if objects have same hashcode they may or may not equal
+	-> if objects are equal by equals() method then their hashcode must be same
+
+
+
+		
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

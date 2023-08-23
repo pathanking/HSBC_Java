@@ -1,0 +1,13 @@
+package com.ems.dao;
+
+public interface EmployeeRepository {
+
+	void save();
+
+	void show();
+
+	void fetch();
+
+	void delete();
+
+}

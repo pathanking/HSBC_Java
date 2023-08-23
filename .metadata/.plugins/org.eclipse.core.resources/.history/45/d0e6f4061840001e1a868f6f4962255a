@@ -1,0 +1,14 @@
+package oop.inheritance;
+
+public class ScienceBook extends Book{
+
+	ScienceBook(int bid, String bname) {
+		super(bid, bname);
+	}
+
+	@Override
+	void read() {
+		
+	}
+
+}

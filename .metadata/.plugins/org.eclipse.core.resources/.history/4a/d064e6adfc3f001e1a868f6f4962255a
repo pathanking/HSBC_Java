@@ -1,0 +1,10 @@
+package oop;
+
+public class StringDemo2 {
+	public static void main(String[] args) {
+		String str = "        hello, there!!";
+		System.out.println(str);
+		
+		
+	}
+}
