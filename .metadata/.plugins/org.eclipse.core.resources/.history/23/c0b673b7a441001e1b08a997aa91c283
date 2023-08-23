@@ -1,0 +1,5 @@
+package com.ems.exceptions;
+
+public class EmployeeNotFoundException {
+
+}

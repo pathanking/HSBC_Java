@@ -5,21 +5,22 @@ import java.util.Scanner;
 
 import com.ems.business.Employee;
 import com.ems.business.EmployeeService;
-import com.ems.dao.DbImplementation;
-import com.ems.dao.InMemoryEmployeeRepository;
+import com.ems.exceptions.EmployeeNotFoundException;
+import com.ems.persistence.DbImplementation;
+import com.ems.persistence.InMemoryEmployeeRepository;
 
 public class MainUI {
 	public static void menu() {
 		System.out.println("1. ADD Employee");
 		System.out.println("2. SHOW Employees");
-		System.out.println("3. GET Employee");
+		System.out.println("3. SEARCH Employee");
 		System.out.println("4. DELETE Employee");
 		System.out.println("5. Exit Application");
 	}
 
 	public static void main(String[] args) {
 
-		EmployeeService service = new EmployeeService(new DbImplementation());
+		EmployeeService service = new EmployeeService(new InMemoryEmployeeRepository());
 
 		Scanner scanner = new Scanner(System.in);
 
@@ -41,13 +42,22 @@ public class MainUI {
 			case 3:
 				System.out.println("Enter Employee ID");
 				int eid = scanner.nextInt();
-				System.out.println(service.getEmployee(eid));
+
+				try {
+					System.out.println(service.getEmployee(eid));
+				} catch (EmployeeNotFoundException e) {
+					System.out.println(e.getMessage());
+				}
 
 				break;
 			case 4:
 				System.out.println("Enter Employee ID");
 				int eid2 = scanner.nextInt();
-				System.out.println(service.deleteEmployee(eid2));
+				try {
+					System.out.println(service.deleteEmployee(eid2));
+				} catch (EmployeeNotFoundException e) {
+					System.out.println(e.getMessage());
+				}
 				break;
 
 			case 5:

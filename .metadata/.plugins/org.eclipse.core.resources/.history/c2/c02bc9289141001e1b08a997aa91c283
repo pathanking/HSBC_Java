@@ -1,0 +1,25 @@
+package exceptions;
+
+class A {
+
+}
+
+class B extends A {
+
+}
+
+public class ExceptionDemo6 {
+	public static void main(String[] args) {
+
+		// implicit -> up casting
+		// explicit -> down casting
+
+		long l = 5;
+
+		byte b = 3;
+
+		l = b;
+
+//		b = (byte) l;
+	}
+}

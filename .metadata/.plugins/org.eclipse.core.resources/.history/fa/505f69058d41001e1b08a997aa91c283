@@ -1,0 +1,33 @@
+package exceptions;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class ExceptionDemo5 {
+
+	public static void main(String[] args) {
+		FileOutputStream fos = null;
+		try {
+			fos = new FileOutputStream("abc.txt");
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+
+		try {
+			fos.write("Have a great day!!".getBytes());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		System.out.println("success!");
+
+		try {
+			if (fos != null)
+				fos.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

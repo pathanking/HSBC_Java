@@ -2,7 +2,8 @@ package com.ems.business;
 
 import java.util.List;
 
-import com.ems.dao.EmployeeRepository;
+import com.ems.exceptions.EmployeeNotFoundException;
+import com.ems.persistence.EmployeeRepository;
 
 public class EmployeeService {
 
@@ -24,11 +25,21 @@ public class EmployeeService {
 		return repository.show();
 	}
 
-	public Employee getEmployee(int eid) {
-		return repository.fetch(eid);
+	public Employee getEmployee(int eid) throws EmployeeNotFoundException {
+		Employee emp = null;
+		try {
+			emp = repository.fetch(eid);
+		} catch (EmployeeNotFoundException e) {
+			throw e;
+		}
+		return emp;
 	}
 
-	public String deleteEmployee(int eid) {
-		return repository.delete(eid);
+	public String deleteEmployee(int eid) throws EmployeeNotFoundException{
+		try {
+			return repository.delete(eid);
+		} catch (EmployeeNotFoundException e) {
+			throw e;
+		}
 	}
 }
