@@ -1,0 +1,9 @@
+package multi_threads;
+
+public class Table {
+
+	public void printTable(int n) {
+		for(int i=1; i<=n; i++) 
+			System.out.printf("%d * %d = %d\n", n, i, n*i);
+	}
+}

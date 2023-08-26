@@ -1,0 +1,16 @@
+package iostreams;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+public class FilesDemo {
+	public static void main(String[] args) throws IOException {
+		
+		Path path = Path.of("javalearning.txt");
+		
+		long lines = Files.lines(path).count();
+		
+		System.out.println(lines);
+	}
+}

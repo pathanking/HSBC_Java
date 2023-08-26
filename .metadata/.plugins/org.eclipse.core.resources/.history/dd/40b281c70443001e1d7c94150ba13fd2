@@ -1,0 +1,21 @@
+package multi_threads;
+
+class Task1 implements Runnable {
+
+	@Override
+	public void run() {
+
+	}
+}
+
+class Task2 implements Runnable {
+
+	@Override
+	public void run() {
+
+	}
+}
+
+public class ThreadDemo2 {
+
+}

@@ -453,6 +453,67 @@ loans
  	   }	
 
 
+				Input Output Streams: (java.io package)
+			---------------------------------------------------
+
+	1. Byte Streams: InputStream, OutputStream
+	2. Chracter Streams: Reader, Writer
+
+
+				Multi Threading:
+			-----------------------------------
+	Thread: A light-weight process
+	
+	1. extending Thread class
+	2. implementing Runnable interface
+
+				ExecutorService Framework	 	
+			----------------------------------------
+	lambda: an anonymous function
+	
+	functional interface: an interface having Single Abstract Method(SAM)
+
+	If functional interface is there, then we can write lambda for it
+
+
+	
+				Collections Frameowork
+			------------------------------------------
+	Interfaces:
+		Collection
+		Set	
+		List
+		Queue
+		Deque
+		Map
+		SortedSet
+		NavigableSet
+		SortedMap
+		NavigableMap
+		Iterator
+		ListIterator
+		Enumeration
+		Comparator
+
+	Classes(Implementations):
+		ArrayList
+		Vector
+		Stack
+		LinkedList
+		HashSet
+		LinkedHashSet
+		TreeSet
+		PriorityQueue
+		HashMap
+		LinkedHashMap
+		TreeMap
+		Hashtable
+
+	Algorithms:
+		Sorting Algorithms
+		Searching Algorithms
+		Basic Data Structures
+
 
 
 

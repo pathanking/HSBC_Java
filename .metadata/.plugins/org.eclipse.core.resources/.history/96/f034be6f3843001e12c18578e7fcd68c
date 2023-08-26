@@ -1,0 +1,12 @@
+package assignments;
+
+
+
+public class Order {
+	
+    private int orderId;
+    private List<String> itemNames;
+    private boolean cashOnDelivery;
+
+
+}

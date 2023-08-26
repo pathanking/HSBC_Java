@@ -1,0 +1,33 @@
+package collections;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class ArrayListDemo {
+	public static void main(String[] args) {
+		ArrayList<String> list = new ArrayList<>();
+		
+		list.add("hello");
+		//list.add(100);
+		//list.add(25.5);
+		//list.add(true);
+		//list.add(false);
+		
+		list.add("hii");
+		list.add("hey");
+		
+		Iterator iterator = list.iterator();
+		while(iterator.hasNext()){	
+			String string = (String)iterator.next();
+			System.out.println(string.toUpperCase());
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

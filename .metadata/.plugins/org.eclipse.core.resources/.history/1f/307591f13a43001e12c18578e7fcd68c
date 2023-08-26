@@ -1,0 +1,29 @@
+package assignments;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class OrderTest {
+
+	public static void main(String[] args) {
+		Order order1 = new Order(101, List.of("FriedRice", "Pasta", "Thortilla"), false);
+		Order order2 = new Order(102, List.of("Pizza", "Pasta"), true);
+		Order order3 = new Order(103, List.of("Burger", "Sandwich", "Pizza"), false);
+
+		List<Order> orders = new ArrayList<>();
+		orders.add(order1);
+		orders.add(order2);
+		orders.add(order3);
+
+		System.out.println("Displaying order details");
+		for (Order o : orders) {
+			System.out.println("Order Id:" + o.getOrderId());
+			System.out.println("Items:");
+			for (String itemName : o.getItemNames())
+				System.out.println(itemName);
+			
+			System.out.println("----------------------");
+		}
+
+	}
+}

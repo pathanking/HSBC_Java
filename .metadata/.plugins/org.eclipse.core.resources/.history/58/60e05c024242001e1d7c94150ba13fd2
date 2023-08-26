@@ -1,0 +1,14 @@
+package iostreams;
+
+import java.io.File;
+
+public class FileDemo {
+
+	public static void main(String[] args) {
+
+		File myFile = new File("E:\\javaiostreams.txt");
+		
+		System.out.println("file created");
+		
+	}
+}

@@ -1,0 +1,28 @@
+package multi_threads;
+
+class Thread1 extends Thread {
+	public void run() {
+		for (int i = 1; i < 11; i++)
+			System.out.println(Thread.currentThread().getName() + " : " + i);
+	}
+}
+
+class Thread2 extends Thread {
+	public void run() {
+		for (int i = 90; i < 101; i++)
+			System.out.println(Thread.currentThread().getName() + " : " + i);
+	}
+}
+
+public class ThreadDemo {
+
+	public static void main(String[] args) {
+		Thread1 t1 = new Thread1();
+		t1.setName("YOU");
+		Thread2 t2 = new Thread2();
+		t2.setName("ME");
+
+		t1.start();
+		t2.start();
+	}
+}

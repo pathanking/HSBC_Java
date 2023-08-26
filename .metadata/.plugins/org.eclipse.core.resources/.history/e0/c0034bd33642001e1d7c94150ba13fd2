@@ -1,0 +1,18 @@
+package iostreams;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class FileInputStreamDemo {
+
+	public static void main(String[] args) throws IOException {
+		FileInputStream fis = new FileInputStream("abc.txt");
+		// Write logic to read from abc.txt file
+
+		int data;
+
+		while ((data = fis.read()) != -1) {
+			System.out.println(data);
+		}
+	}
+}

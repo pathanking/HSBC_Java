@@ -1,0 +1,34 @@
+package multi_threads;
+
+import java.util.ArrayList;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ThreadDemo4 {
+	public static void main(String[] args) {
+		ExecutorService executor = Executors.newFixedThreadPool(5);
+
+		Callable task1 = () -> {
+			for (int i = 0; i < 10; i++)
+				System.out.println(Thread.currentThread().getName() + " : " + i);
+		};
+		Callable task2 = () -> {
+			for (int i = 90; i < 100; i++)
+				System.out.println(Thread.currentThread().getName() + " : " + i);
+		};
+		Callable task3 = () -> {
+			for (int i = 1090; i < 2000; i++)
+				System.out.println(Thread.currentThread().getName() + " : " + i);
+		};
+
+		ArrayList<Callable> tasks = new ArrayList<>();
+		tasks.add(task1);
+		tasks.add(task2);
+		tasks.add(task3);
+
+		executor.invokeAll(tasks);
+
+		executor.shutdown();
+	}
+}

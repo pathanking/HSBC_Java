@@ -1,0 +1,17 @@
+package collections;
+
+import java.util.ArrayList;
+
+public class ArrayListDemo {
+	public static void main(String[] args) {
+		ArrayList list = new ArrayList();
+		
+		list.add("hello");
+		list.add(100);
+		list.add(25.5);
+		list.add(true);
+		list.add(false);
+		
+		System.out.println(list);
+	}
+}

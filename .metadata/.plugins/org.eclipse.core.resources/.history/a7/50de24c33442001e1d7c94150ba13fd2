@@ -1,0 +1,23 @@
+package exceptions;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class ExceptionDemo5 {
+
+	public static void main(String[] args) throws IOException {
+		FileOutputStream fos = null;
+
+		fos = new FileOutputStream("G://abc.txt");
+
+		if (fos != null)
+			fos.write("Have a great evening!!".getBytes());
+
+		System.out.println("success!");
+
+		if (fos != null)
+			fos.close();
+
+	}
+}
