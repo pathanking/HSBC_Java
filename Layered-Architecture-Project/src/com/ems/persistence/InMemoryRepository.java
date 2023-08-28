@@ -6,7 +6,7 @@ import com.ems.business.Employee;
 
 import com.ems.exceptions.EmployeeNotFoundException;
 
-public class InMemoryEmployeeRepository implements EmployeeRepository {
+public class InMemoryRepository implements EmployeeRepository {
 
 	static ArrayList<Employee> employees = new ArrayList<>();
 

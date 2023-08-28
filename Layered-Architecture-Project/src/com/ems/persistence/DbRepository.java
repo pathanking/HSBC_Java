@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import com.ems.business.Employee;
 import com.ems.exceptions.EmployeeNotFoundException;
 
-public class DbImplementation implements EmployeeRepository {
+public class DbRepository implements EmployeeRepository {
 
 	@Override
 	public void save(String ename) {

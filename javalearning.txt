@@ -515,10 +515,11 @@ loans
 		Basic Data Structures
 
 
-
-
-
-
+    Comparable						Comparator
+	-> java.lang				->java.util
+	-> only one way of sorting		->many ways of sorting
+	-> model class is modified		->model class isn't modified
+	
 
 
 
