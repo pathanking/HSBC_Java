@@ -15,11 +15,10 @@ public class LibraryUI {
 		System.out.println("\t\t\t [1] ADD Book");
 		System.out.println("\t\t\t [2] GET Book");
 		System.out.println("\t\t\t [3] SHOW Books");
-		System.out.println("\t\t\t [3] Exit Application");
+		System.out.println("\t\t\t [4] Exit Application");
 	}
 
 	public static void main(String[] args) {
-		menu();
 		Scanner sc = new Scanner(System.in);
 		System.out.println("\t\t\t Enter Your Choice of Repo >>>");
 		System.out.println("\t\t\t (1) DbImpl   (2) ListImpl ");
@@ -28,18 +27,21 @@ public class LibraryUI {
 		LibraryRepository repo = Factory.getRepository(choice);
 
 		LibraryService service = new LibraryService(repo);
-
-		System.out.println("Enter Your Choice of Operation [1][2][3]");
-		int c = sc.nextInt();
+		int c = 0;
 		do {
+			menu();
+			System.out.println("Enter Your Choice of Operation [1][2][3]");
+			c = sc.nextInt();
 			switch (c) {
 			case 1:
+				System.out.println("Enter Book ID");
+				Integer bookId = sc.nextInt();
 				System.out.println("Enter Book Title");
 				String title = sc.next();
 				System.out.println("Enter Author Name");
 				String author = sc.next();
 				try {
-					System.out.println(service.addBook(title, author));
+					System.out.println(service.addBook(bookId, title, author));
 				} catch (BookAlreadyExistsException e) {
 					System.out.println(e.getMessage());
 				}

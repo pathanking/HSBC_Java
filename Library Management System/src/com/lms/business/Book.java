@@ -6,14 +6,6 @@ public class Book {
 	private Integer bookId;
 	private String title;
 	private String author;
-	private static int count;
-
-	// add more fields
-	public Book(String title, String author) {
-		this.bookId = count++;
-		this.title = title;
-		this.author = author;
-	}
 
 	public Book(Integer bookId, String title, String author) {
 		this.bookId = bookId;

@@ -74,14 +74,12 @@ public class DbImpl implements LibraryRepository {
 	public List<Book> show() {
 		Book book = null;
 		PreparedStatement ps = null;
-		List<Book> list = null;
+		List<Book> list = new ArrayList<>();
 		try {
 			ps = con.prepareStatement("SELECT *FROM book");
 			ResultSet resultSet = ps.executeQuery();
 			while (resultSet.next()) {
 				book = new Book(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3));
-
-				list = new ArrayList<>();
 				list.add(book);
 			}
 

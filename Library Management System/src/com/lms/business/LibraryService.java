@@ -14,8 +14,8 @@ public class LibraryService {
 		this.repo = repo;
 	}
 
-	public String addBook(String title, String author) throws BookAlreadyExistsException {
-		Book book = new Book(title, author);
+	public String addBook(Integer bookId, String title, String author) throws BookAlreadyExistsException {
+		Book book = new Book(bookId, title, author);
 
 		try {
 			return repo.add(book);
