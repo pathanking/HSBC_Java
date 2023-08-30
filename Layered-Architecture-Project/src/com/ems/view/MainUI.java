@@ -7,6 +7,7 @@ import com.ems.business.Employee;
 import com.ems.business.EmployeeService;
 import com.ems.exceptions.EmployeeNotFoundException;
 import com.ems.persistence.DbRepository;
+import com.ems.persistence.EmployeeRepository;
 import com.ems.persistence.InMemoryRepository;
 import com.ems.persistence.PersistanceFactory;
 
@@ -24,8 +25,10 @@ public class MainUI {
 		try (Scanner scanner = new Scanner(System.in)) {
 			System.out.println("Enter Your DB Choice >>>");
 			String dbChoice = scanner.next();
+			
+			EmployeeRepository repository = PersistanceFactory.getRepository(dbChoice);
 
-			EmployeeService service = new EmployeeService(PersistanceFactory.getRepository(dbChoice));
+			EmployeeService service = new EmployeeService(repository);
 
 			int choice = 0;
 			do {

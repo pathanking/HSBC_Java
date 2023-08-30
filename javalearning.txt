@@ -520,6 +520,26 @@ loans
 	-> only one way of sorting		->many ways of sorting
 	-> model class is modified		->model class isn't modified
 	
+	DBMS: A complete software to manage databases, applying security, creating users, 	creating privileges etc..
+	database: A database a group of related tables, views, functions, etc...
+
+	DDL: CREATE, ALTER, DROP, TRUNCATE, RENAME
+	DML: INSERT UPDATE DELETE
+	
+				https://mvnrepository.com/
+
+
+
+
+
+
+
+
+
+
+
+
+	
 
 
 
