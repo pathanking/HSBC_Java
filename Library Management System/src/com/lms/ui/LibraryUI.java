@@ -1,7 +1,9 @@
 package com.lms.ui;
 
+import java.util.List;
 import java.util.Scanner;
 
+import com.lms.business.Book;
 import com.lms.business.LibraryService;
 import com.lms.excepetions.BookAlreadyExistsException;
 import com.lms.excepetions.BookNotFoundException;
@@ -56,7 +58,9 @@ public class LibraryUI {
 				}
 				break;
 			case 3:
-				service.showBooks().forEach(System.out::println);
+				List<Book> showBooks = service.showBooks();
+				System.out.println("Books Count : "+showBooks.size());
+				showBooks.forEach(System.out::println);
 				break;
 			case 4:
 				System.out.println("Application will be terminated!");

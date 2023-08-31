@@ -1,5 +1,0 @@
-package com.ems.dao;
-
-public class InMemoryEmployeeRepository {
-
-}

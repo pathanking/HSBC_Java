@@ -1,7 +1,0 @@
-package oop;
-
-public class Emp {
-	int id;
-	String name;
-
-}

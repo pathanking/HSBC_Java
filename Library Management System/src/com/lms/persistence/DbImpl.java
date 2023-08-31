@@ -34,7 +34,7 @@ public class DbImpl implements LibraryRepository {
 				response = "Record Inserted Successfully!";
 
 		} catch (SQLException e) {
-			e.printStackTrace();
+			throw new BookAlreadyExistsException("Book Already Exists");
 		}
 
 		return response;

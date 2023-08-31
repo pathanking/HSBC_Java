@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+
+    <style>
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <form name="myform" action="#" onsubmit="return validate()">
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="fn" id="fn"></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" name="ln" id="ln"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="em" id="em"></td>
+                </tr>
+                <tr>
+                    <td>Mobile:</td>
+                    <td><input type="number" name="mob" id="mob"></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td><input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Courses:</td>
+                    <td><input type="checkbox" name="java" id="java">Java
+                        <input type="checkbox" name="python" id="python">Python
+                        <input type="checkbox" name="ds" id="ds">Data Science
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                    <td><button type="reset">Reset</button></td>
+                </tr>
+            </form>
+        </tbody>
+    </table>
+
+    <script src="forms.js"></script>
+</body>
+
+</html>

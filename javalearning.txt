@@ -530,6 +530,22 @@ loans
 
 
 
+	/  root directory
+	home	user accounts info
+	root	root (admin) account info
+	dev	hardware device & drivers
+	etc	server configuration, web config, database configuration
+	opt	optional files
+	bin	users command info
+	sbin    root command info
+	tmp     contains temporary files
+	
+
+
+
+
+
+
 
 
 

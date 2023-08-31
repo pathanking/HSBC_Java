@@ -1,9 +1,0 @@
-package oop;
-
-public class StringBuilderDemo {
-	public static void main(String[] args) {
-		StringBuilder builder = new StringBuilder("hello");
-		builder.append("world");
-		System.out.println(builder);
-	}
-}

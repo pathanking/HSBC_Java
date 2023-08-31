@@ -1,5 +1,0 @@
-package oop.abstraction.smartphone;
-
-public abstract class SmartPhone {
-
-}
